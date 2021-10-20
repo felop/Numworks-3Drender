@@ -42,7 +42,7 @@ def GetDist(point):
 
 def GetNormal(p):
     d = GetDist(p)
-    e = [0.01,0]
+    e = [0.005,0]
     n = [d-GetDist([p[0]-e[0],p[1]-e[1],p[2]-e[1]]),
          d-GetDist([p[0]-e[1],p[1]-e[0],p[2]-e[1]]),
          d-GetDist([p[0]-e[1],p[1]-e[1],p[2]-e[0]])]
