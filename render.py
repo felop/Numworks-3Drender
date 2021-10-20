@@ -1,9 +1,9 @@
 from math import sqrt, atan, pi
 import kandinsky
 
-MAX_STEP = 60
+MAX_STEP = 50
 MAX_DIST = 20
-SURFACE_DIST = 0.005
+SURFACE_DIST = 0.01
 
 ###################
 # maths functions #
@@ -34,7 +34,7 @@ def normalize(v):
 ###################
 
 def GetDist(point):
-    sphere      = [0.5,0.7,2.5,0.5]
+    sphere      = [0.5,0.5,2.5,0.5]
     sphereDist  = length(point,sphere)-sphere[3]
     planeDist   = point[1]
     distance    = min(sphereDist,planeDist)
@@ -42,7 +42,7 @@ def GetDist(point):
 
 def GetNormal(p):
     d = GetDist(p)
-    e = [0.1,0]
+    e = [0.01,0]
     n = [d-GetDist([p[0]-e[0],p[1]-e[1],p[2]-e[1]]),
          d-GetDist([p[0]-e[1],p[1]-e[0],p[2]-e[1]]),
          d-GetDist([p[0]-e[1],p[1]-e[1],p[2]-e[0]])]
