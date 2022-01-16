@@ -9,19 +9,21 @@ I just rewrote [my GLSL scirpt](https://github.com/felop/NeuralRayMarching) in p
  - ~10 minutes
  - ~5 minutes (without the shadows)
 
-<br><br><br><br><br><br><br><br><br><br>
 
 ### Examples of GLSL functions coded in python
 
 ```python
-def length(o,p):
-    return sqrt((o[0]-p[0])**2+(o[1]-p[1])**2+(o[2]-p[2])**2)
-
 def product(list0,list2):
     facteurs = []
     for num0, num2 in zip(list0, list2):
         facteurs.append(num0 * num2)
     return facteurs
+
+def addition(list0,list2):
+    termes = []
+    for num0, num2 in zip(list0, list2):
+        termes.append(num0 + num2)
+    return termes
     
 def normalize(v):
     root = sqrt(v[0]**2+v[1]**2+v[2]**2)
