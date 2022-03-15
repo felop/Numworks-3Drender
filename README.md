@@ -5,7 +5,7 @@
 
 Very inefficient way to render a 3D Scene on a numworks calculator, using Ray Marching.
 
-I just rewrote [my GLSL scirpt](https://github.com/felop/NeuralRayMarching) in python to run in on my calculator. Fun to use dispite the extremely slow render speed per frame :
+I just rewrote [my GLSL scirpt](https://github.com/felop/NeuralRayMarching) in python to run it on my calculator. Fun to use dispite the extremely slow render speed per frame :
  - ~10 minutes
  - ~5 minutes (without the shadows)
 
